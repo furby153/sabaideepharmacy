@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Sabaidee-Pharmacy/static/css/main.caf9cba0.css",
+    "main.js": "/Sabaidee-Pharmacy/static/js/main.0732e1a1.js",
+    "static/js/787.393f0a42.chunk.js": "/Sabaidee-Pharmacy/static/js/787.393f0a42.chunk.js",
+    "static/media/background.jpg": "/Sabaidee-Pharmacy/static/media/background.64cc9035e6789c1fa2be.jpg",
+    "static/media/logo.svg": "/Sabaidee-Pharmacy/static/media/logo.b1fdc2118d55b190020eaa9dedb3557c.svg",
+    "index.html": "/Sabaidee-Pharmacy/index.html",
+    "main.caf9cba0.css.map": "/Sabaidee-Pharmacy/static/css/main.caf9cba0.css.map",
+    "main.0732e1a1.js.map": "/Sabaidee-Pharmacy/static/js/main.0732e1a1.js.map",
+    "787.393f0a42.chunk.js.map": "/Sabaidee-Pharmacy/static/js/787.393f0a42.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.caf9cba0.css",
+    "static/js/main.0732e1a1.js"
+  ]
+}
