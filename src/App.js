@@ -5,11 +5,15 @@ import './App.css';
 function App() {
 
   const phoneNumber = '089-441-2049';
-  const cleanPhoneNumber = phoneNumber.replace(/-/g, ''); // Remove dashes from the phone number
+  // Remove dashes from the phone number
+  const cleanPhoneNumber = phoneNumber.replace(/-/g, '');
+  // Add the country code to the phone number
+  const phoneNumberWithCountryCode = `+66${cleanPhoneNumber.substring(1)}`;
+  
   const lineId = '@642mltxi';
 
   const handleCall = () => {
-    window.location.href = `tel:${cleanPhoneNumber}`;
+    window.location.href = `tel:${phoneNumberWithCountryCode}`;
   };
 
   const handleCopyLineId = () => {
