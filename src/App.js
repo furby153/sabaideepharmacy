@@ -12,6 +12,8 @@ function App() {
   
   const lineId = '@642mltxi';
 
+  const googleMapsLink = 'https://goo.gl/maps/H9TGjvoooDESR6sQ8';
+
   const handleCall = () => {
     window.location.href = `tel:${phoneNumberWithCountryCode}`;
   };
@@ -56,6 +58,23 @@ function App() {
         <p>95/18 หมู่ 3 ต.ปากข้าวสาร</p>
         <p>อ.เมืองสระบุรี จ.สระบุรี</p>
         <h3 onClick={handleCall} style={{ cursor: 'pointer' }}>โทร.{phoneNumber}</h3>
+        <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
+        <button 
+          style={{
+            fontSize: '18px',
+            padding: '10px 20px',
+            backgroundColor: '#4CAF50',
+            color: 'white',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            border: 'none',
+            boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)',
+            margin: '10px',
+          }}
+        >
+            แสดงที่อยู่บน Google Maps
+          </button>
+        </a>
       </div>
       <div className='line-section'>
         <h2>Line Official Account</h2>
@@ -88,13 +107,13 @@ function App() {
             cursor: 'pointer',
             border: 'none',
             boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)',
+            margin: '10px',
           }}
           onClick={handleShowQRCode}
           >
             Show QR Code
           </button>
         )}
-        <br/>
       </div>
       
     </div>
