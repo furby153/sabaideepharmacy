@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/sabaideepharmacy/static/css/main.7f6cb688.css",
-    "main.js": "/sabaideepharmacy/static/js/main.798cd697.js",
+    "main.js": "/sabaideepharmacy/static/js/main.869e341c.js",
     "static/js/787.393f0a42.chunk.js": "/sabaideepharmacy/static/js/787.393f0a42.chunk.js",
     "static/media/logo.svg": "/sabaideepharmacy/static/media/logo.b1fdc2118d55b190020eaa9dedb3557c.svg",
     "index.html": "/sabaideepharmacy/index.html",
     "main.7f6cb688.css.map": "/sabaideepharmacy/static/css/main.7f6cb688.css.map",
-    "main.798cd697.js.map": "/sabaideepharmacy/static/js/main.798cd697.js.map",
+    "main.869e341c.js.map": "/sabaideepharmacy/static/js/main.869e341c.js.map",
     "787.393f0a42.chunk.js.map": "/sabaideepharmacy/static/js/787.393f0a42.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f6cb688.css",
-    "static/js/main.798cd697.js"
+    "static/js/main.869e341c.js"
   ]
 }
