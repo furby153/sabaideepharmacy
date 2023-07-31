@@ -11,6 +11,15 @@ function App() {
     window.location.href = `tel:${cleanPhoneNumber}`;
   };
 
+  const handleCopyLineId = () => {
+    const lineId = '@642mltxi';
+    navigator.clipboard.writeText(lineId).then(() => {
+      alert(`Copied Line ID: ${lineId}`);
+    }).catch((err) => {
+      console.error('Failed to copy Line ID: ', err);
+    });
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -26,7 +35,7 @@ function App() {
       </div>
       <div className='line-section'>
         <h2>Line Official Account</h2>
-        <h3>กดเพิ่มเพื่อน @642mltxi</h3>
+        <h3 onClick={handleCopyLineId} style={{ cursor: 'pointer' }}>กดเพิ่มเพื่อน @642mltxi</h3>
         <h3><a href="https://lin.ee/bGqAAAz" target="_blank" rel="noopener noreferrer">https://lin.ee/bGqAAAz</a></h3>
         <img alt='QR code' src="https://qr-official.line.me/gs/M_642mltxi_BW.png"></img>
         <br/>
