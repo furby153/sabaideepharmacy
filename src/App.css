@@ -1,13 +1,25 @@
-.App {
-  background-image: url('./background.jpg');
-  background-size: cover;
+.App-header {
+  background-color: #282c34;
+  /* background-image: url('./background.jpg');
+  background-size: 80vmin;
   background-position: center;
+  background-repeat: no-repeat; */
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  font-size: calc(20px + 2vmin);
+  color: white;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
-}
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px; /* Add 10 pixels top margin */
+} 
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -15,26 +27,32 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+/* Rest of your CSS */
+
+.center {
+  text-align: center;
+}
+
+.line-section {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  color: white;
+}
+
+/* Remove underline and color change on hover for all anchor tags */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent element */
+}
+
+/* Set the color for anchor tags inside the line-section div */
+.line-section a {
+  color: #007bff; /* Change this to the desired color for the links */
+}
