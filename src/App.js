@@ -55,7 +55,21 @@ function App() {
       </div>
       <div className='line-section'>
         <h2>Line Official Account</h2>
-        <h3 onClick={handleOpenLine} style={{ cursor: 'pointer' }}>กดเพิ่มเพื่อน @642mltxi</h3>
+        <button 
+          style={{
+            fontSize: '18px',
+            padding: '10px 20px',
+            backgroundColor: '#4CAF50',
+            color: 'white',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            border: 'none',
+            boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)',
+          }}
+          onClick={handleOpenLine}
+        >
+          กดเพื่อเพิ่มเพื่อน @642mltxi
+        </button>
         <h3><a href="https://lin.ee/bGqAAAz" target="_blank" rel="noopener noreferrer">https://lin.ee/bGqAAAz</a></h3>
         {showQRCode ? (
           <img alt='QR code' src="https://qr-official.line.me/gs/M_642mltxi_BW.png"></img>
