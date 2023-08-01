@@ -95,7 +95,7 @@ function App() {
           className='green-button-style'
           onClick={handleOpenLine}
         >
-          กดเพื่อเพิ่มเพื่อน @642mltxi
+          กดเพื่อเพิ่มเพื่อน
         </button>
         <h3><a href="https://lin.ee/bGqAAAz" target="_blank" rel="noopener noreferrer">https://lin.ee/bGqAAAz</a></h3>
         {showQRCode ? (
