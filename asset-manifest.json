@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/sabaideepharmacy/static/css/main.7f6cb688.css",
-    "main.js": "/sabaideepharmacy/static/js/main.2832c228.js",
+    "main.css": "/sabaideepharmacy/static/css/main.754fc219.css",
+    "main.js": "/sabaideepharmacy/static/js/main.9d328f7b.js",
     "static/js/787.393f0a42.chunk.js": "/sabaideepharmacy/static/js/787.393f0a42.chunk.js",
     "static/media/logo.svg": "/sabaideepharmacy/static/media/logo.b1fdc2118d55b190020eaa9dedb3557c.svg",
+    "static/media/Google_Maps_icon_(2020).svg": "/sabaideepharmacy/static/media/Google_Maps_icon_(2020).24b2bcb94349710b7f203c999d593810.svg",
     "index.html": "/sabaideepharmacy/index.html",
-    "main.7f6cb688.css.map": "/sabaideepharmacy/static/css/main.7f6cb688.css.map",
-    "main.2832c228.js.map": "/sabaideepharmacy/static/js/main.2832c228.js.map",
+    "main.754fc219.css.map": "/sabaideepharmacy/static/css/main.754fc219.css.map",
+    "main.9d328f7b.js.map": "/sabaideepharmacy/static/js/main.9d328f7b.js.map",
     "787.393f0a42.chunk.js.map": "/sabaideepharmacy/static/js/787.393f0a42.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f6cb688.css",
-    "static/js/main.2832c228.js"
+    "static/css/main.754fc219.css",
+    "static/js/main.9d328f7b.js"
   ]
 }
