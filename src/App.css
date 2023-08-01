@@ -15,11 +15,13 @@
 
 .App-logo {
   height: 20vmin;
+  min-height: 200px;
+  min-width: 200px;
   pointer-events: none;
   display: flex;
   align-items: baseline;
   margin-top: 10px; /* Add 10 pixels top margin */
-} 
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -70,6 +72,7 @@ a {
 }
 
 .google-maps-logo {
-  width: auto; 
+  width: auto;
   max-height: 3vw;
+  min-height: 50px;
 }
