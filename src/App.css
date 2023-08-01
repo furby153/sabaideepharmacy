@@ -56,3 +56,20 @@ a {
 .line-section a {
   color: #007bff; /* Change this to the desired color for the links */
 }
+
+.green-button-style {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.google-maps-logo {
+  width: auto; 
+  max-height: 3vw;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
+import googleMapsLogo from './Google_Maps_icon_(2020).svg'
 import './App.css';
 
 function App() {
@@ -9,14 +10,20 @@ function App() {
   const cleanPhoneNumber = phoneNumber.replace(/-/g, '');
   // Add the country code to the phone number
   const phoneNumberWithCountryCode = `+66${cleanPhoneNumber.substring(1)}`;
-  
-  const lineId = '@642mltxi';
-
-  const googleMapsLink = 'https://goo.gl/maps/H9TGjvoooDESR6sQ8';
-
   const handleCall = () => {
     window.location.href = `tel:${phoneNumberWithCountryCode}`;
   };
+
+  // Define a state to keep track of SVG link loading status
+  const [svgLinkError, setSvgLinkError] = useState(false);
+
+  // Function to handle SVG link load error
+  const handleSvgLinkError = () => {
+    setSvgLinkError(true);
+  };
+  const googleMapsLink = 'https://goo.gl/maps/H9TGjvoooDESR6sQ8';
+  
+  const lineId = '@642mltxi';
 
   const handleCopyLineId = () => {
     navigator.clipboard.writeText(lineId).then(() => {
@@ -58,37 +65,34 @@ function App() {
         <p>95/18 หมู่ 3 ต.ปากข้าวสาร</p>
         <p>อ.เมืองสระบุรี จ.สระบุรี</p>
         <h3 onClick={handleCall} style={{ cursor: 'pointer' }}>โทร.{phoneNumber}</h3>
-        <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
-        <button 
-          style={{
-            fontSize: '18px',
-            padding: '10px 20px',
-            backgroundColor: '#4CAF50',
-            color: 'white',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            border: 'none',
-            boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)',
-            margin: '10px',
-          }}
-        >
-            แสดงที่อยู่บน Google Maps
-          </button>
-        </a>
+        <div>
+          <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
+            {svgLinkError ? (
+              <div>
+                {/* Show the local SVG file if the SVG link is unavailable */}
+                <img src={googleMapsLogo} alt="Google Maps Logo" className="google-maps-logo"/>
+              </div>
+            ) : (
+              <img
+                alt='Google Maps Logo'
+                src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Google_Maps_icon_%282020%29.svg" // Replace this URL with your SVG link
+                className="google-maps-logo"
+                onError={handleSvgLinkError}
+            />
+            )}
+          </a>
+          <br/>
+          <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
+            <button className='green-button-style'>
+              แสดงที่อยู่บน Google Maps
+            </button>
+          </a>
+        </div>
       </div>
       <div className='line-section'>
         <h2>Line Official Account</h2>
         <button 
-          style={{
-            fontSize: '18px',
-            padding: '10px 20px',
-            backgroundColor: '#4CAF50',
-            color: 'white',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            border: 'none',
-            boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)',
-          }}
+          className='green-button-style'
           onClick={handleOpenLine}
         >
           กดเพื่อเพิ่มเพื่อน @642mltxi
@@ -98,18 +102,8 @@ function App() {
           <img alt='QR code' src="https://qr-official.line.me/gs/M_642mltxi_BW.png"></img>
         ) : (
           <button
-          style={{
-            fontSize: '18px',
-            padding: '10px 20px',
-            backgroundColor: '#4CAF50',
-            color: 'white',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            border: 'none',
-            boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.2)',
-            margin: '10px',
-          }}
-          onClick={handleShowQRCode}
+            className='green-button-style'
+            onClick={handleShowQRCode}
           >
             Show QR Code
           </button>
