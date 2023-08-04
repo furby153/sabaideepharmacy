@@ -39,6 +39,22 @@
   text-align: center;
 }
 
+.google-maps-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  color: white;
+}
+
+.facebook-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  color: white;
+}
+
 .line-section {
   background-color: #282c34;
   display: flex;
@@ -72,6 +88,12 @@ a {
 }
 
 .google-maps-logo {
+  width: auto;
+  max-height: 3vw;
+  min-height: 50px;
+}
+
+.facebook-logo {
   width: auto;
   max-height: 3vw;
   min-height: 50px;
